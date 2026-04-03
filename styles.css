@@ -397,11 +397,13 @@ button {
   width: 100%;
   aspect-ratio: 9 / 16;
   object-fit: cover;
+  object-position: center top;
   border-radius: calc(var(--radius-lg) - 0.2rem);
   background: #050404;
   box-shadow:
     0 0 0 1px rgba(255, 216, 171, 0.12),
     0 18px 30px rgba(0, 0, 0, 0.32);
+  clip-path: inset(0 0 7% 0 round calc(var(--radius-lg) - 0.2rem));
 }
 
 .video-toggle {
